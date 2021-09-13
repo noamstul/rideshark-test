@@ -87,3 +87,68 @@ h4 {
     font-size: 1.2rem;
     color: rgb(59, 59, 59);
 }
+
+/*Styling the header and progress tracker*/
+
+header {
+    padding: 2rem;
+    background-color: #f5f5f5;
+}
+
+.help {
+    border-radius: 50%;
+    border: none;
+    color: grey;
+    background-color: white;
+    font-weight: 700;
+    position: absolute;
+    margin: 0.5rem;
+    right: 0;
+}
+
+.progress-tracker {
+    background: rgb(32,186,255);
+    background: linear-gradient(90deg, rgba(32,186,255,0.20210090872286413) 0%, rgba(254,228,215,1) 100%);
+    padding: 1.5rem;
+    margin: 2rem auto;
+    border-radius: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 700px;
+}
+
+.progress-indicator {
+    margin-right: 1rem;
+    border-radius: 50%;
+    border: 8px solid rgba(255, 123, 0, 0.158);
+    width: 112px;
+    height: 112px;
+}
+
+circle {
+    fill: rgba(255, 154, 3, 0);
+    stroke: rgb(240, 137, 3);
+    stroke-width: 10;
+    stroke-dasharray: 200;
+    stroke-dashoffset: 800;
+    transform: translate(-2px, -2px);
+    animation: rotate 5s linear 0.5;
+  }
+
+text {
+    fill: black;
+    font-size: 1.3rem;
+    font-weight: 700;
+}
+  
+@keyframes rotate {
+    to {
+        stroke-dashoffset: 0;
+    }
+}
+
+.tracker-text p {
+    color: rgb(124, 124, 124);
+    font-size: 1.2rem;
+}
