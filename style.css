@@ -292,3 +292,15 @@ td:hover {
     font-size: 0.7rem;
     padding-right: 1rem;
 }
+
+/*Media queries*/
+
+@media(min-width: 768px) {
+    .app-main {
+        display: flex;
+        flex-direction: row;
+    }
+    .calendar {
+        width: 50%;
+    }
+}
